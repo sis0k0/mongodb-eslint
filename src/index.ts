@@ -1,10 +1,11 @@
-import { rules, recommendedRules } from './rules';
+import { rules, recommendedRules } from "./rules";
 
 module.exports = {
     rules,
     configs: {
         recommended: {
-            rules: recommendedRules
-        }
-    }
+            plugins: ["mongodb-node"],
+            rules: recommendedRules,
+        },
+    },
 };

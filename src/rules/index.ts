@@ -5,5 +5,5 @@ export const rules = {
 };
 
 export const recommendedRules = {
-    "eslint-plugin-mongodb/no-find-one-without-query": "warn",
+    "mongodb-node/no-find-one-without-query": "warn",
 };
