@@ -14,9 +14,7 @@ ruleTester.run("no-find-one-without-query", rule, {
     invalid: [
         getInvalidTest({
             code: `movies.findOne()`,
-            locations: [
-                { line: 1, column: 1 }
-            ]
+            locations: [{ line: 1, column: 1 }],
         }),
     ],
     valid: [
@@ -25,5 +23,5 @@ ruleTester.run("no-find-one-without-query", rule, {
         `movies.findOne`,
         `movies.findOne({ title: "The Room" })`,
         `movies.findOne({ title: "The Room" }, { projection: { title: 1, imdb: 1 }})`,
-    ]
+    ],
 });
